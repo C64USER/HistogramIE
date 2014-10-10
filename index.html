@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<LINK REL="STYLESHEET" HREF="../common/i2010styles.css">
+<!-- This program uses Explorer Canvas 
+	https://code.google.com/p/explorercanvas/
+
+	We have include EXCanvas in our Github Page.  
+  --->
+<script type="text/javascript" src="./excanvas.js"></script>
+<script type="text/javascript" src="./histogram.js"></script>
+</head>
+<BODY onload="dibuja();"><CENTER>
+<canvas id="cv" height="400" width="480">
+</cancas>
+<BR>
+<script language="javascript">
+function dibuja() {
+        var canvas=document.getElementById("cv");
+        var color1 = "#bb9408";
+        var color2 = "#7D1B7E";
+        var myGraph = new Graph({
+           canvas : canvas,
+           maxValue : 154281,
+           bars : 19,
+           gridOn: 1,
+           grupos: 2 });
+     myGraph.resetLabels();
+     myGraph.drawBar('28792.62',color1,'',1,1);
+     myGraph.drawBar('88706.08',color2,'',0,1);
+     myGraph.writeLabel('10/01/13 a 09/01/14',2,0,0,1);
+     myGraph.drawBar('34401.59',color1,'',1,1);
+     myGraph.drawBar('80653.44',color2,'',0,1);
+     myGraph.writeLabel('10/01/12 a 09/01/13',2,0,0,1);
+     myGraph.drawBar('87925.01',color1,'',1,1);
+     myGraph.drawBar('49812.31',color2,'',0,1);
+     myGraph.writeLabel('10/01/11 a 09/01/12',2,0,0,1);
+     myGraph.drawBar('69729.33',color1,'',1,1);
+     myGraph.drawBar('96700.05',color2,'',0,1);
+     myGraph.writeLabel('10/01/10 a 09/01/11',2,0,0,1);
+     myGraph.drawBar('68298.44',color1,'',1,1);
+     myGraph.drawBar('95390.18',color2,'',0,1);
+     myGraph.writeLabel('10/01/09 a 09/01/10',2,0,0,1);
+     myGraph.drawBar('53255.05',color1,'',1,1);
+     myGraph.drawBar('98431.45',color2,'',0,1);
+     myGraph.writeLabel('10/01/08 a 09/01/09',2,0,0,1);
+     myGraph.drawBar('61451.58',color1,'',1,1);
+     myGraph.drawBar('112643.88',color2,'',0,1);
+     myGraph.writeLabel('10/01/07 a 09/01/08',2,0,0,1);
+     myGraph.drawBar('91418.18',color1,'',1,1);
+     myGraph.drawBar('154280.55',color2,'',0,1);
+     myGraph.writeLabel('10/01/06 a 09/01/07',2,0,0,1);
+     myGraph.drawBar('147459.80',color1,'',1,1);
+     myGraph.drawBar('115423.65',color2,'',0,1);
+     myGraph.writeLabel('10/01/05 a 09/01/06',2,0,0,1);
+     myGraph.drawBar('83043.18',color1,'',1,1);
+     myGraph.drawBar('140617.79',color2,'',0,1);
+     myGraph.writeLabel('10/01/04 a 09/01/05',2,0,0,1);
+};
+</script>
+</body>
+</html>
